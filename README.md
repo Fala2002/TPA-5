@@ -51,15 +51,15 @@
     - Methods : get
     - Endpoint : /user/id
     - Body :
-      ``
+      ```
       {
         "name": "String",
         "email": "String",
         "password": "String"  
       } 
-      ``
+      ```
     - Respons :
-      ``
+      ```
       {
         Jika berhasil :
         "managed to get data"
@@ -67,39 +67,39 @@
         Jika gagal :
         "failed to get data"
       }
-      ``
+      ```
 
 3. **Register**, untuk membuat data user baru
     - Methods : post
     - Endpoint : /user/register
     - Body :
-      ``
+      ```
       {
         "name": "String",
         "email": "String",
         "password": "String"  
       } 
-      ``
+      ```
     - Respons :
-      ``
+      ```
       {
         message: "successfully added data"
       }
-      ``
+      ```
 
 4. **Login**, Masuk ke aplikasi  saat sudah mendapat akses
     - Methods : post
     - Endpoint : /user/login
     - Body :
-      ``
+      ```
       {
         "name": "String",
         "email": "String",
         "password": "String"  
       } 
-      ``
+      ```
     - Respons :
-      ``
+      ```
       {
         Jika berhasil :
         message: "logged in successfully", token
@@ -107,7 +107,7 @@
         Jika gagal :
         message:"failed login"
       }
-      ``
+      ```
 
 ### **Tugas**
 1. **Get All Tugas**, untuk mendapatkan semua data tugas
@@ -116,7 +116,7 @@
     - HTTP Header:
      - authorization: token
     - Respons :
-      ``
+      ```
       {
         "message": "string",
         "data":[
@@ -131,7 +131,7 @@
             }
         ]
       } 
-      ``
+      ```
   
 2. **Get All Tugas**, untuk mendapatkan data tugas berdasarkan id
     - Methods : get
@@ -139,7 +139,7 @@
     - HTTP Header:
      - authorization: token
     - Respons :
-      ``
+      ```
       {
         "message": "string",
         "data": {
@@ -150,7 +150,7 @@
             "user": "ObjectID"
         }
       }
-      ``
+      ```
 
 3. **Add Tugas**, untuk menambahkan data tugas
     - Methods : post
@@ -158,11 +158,11 @@
     - HTTP Header:
      - authorization: token
     - Respons :
-      ``
+      ```
         {
             "message": "successfully added data"
         }
-      ``
+      ```
 
 4. **Delete Tugas By ID**, untuk menghapus data tugas berdasarkan id
     - Methods : delete
@@ -170,7 +170,7 @@
     - HTTP Header:
      - authorization: token
     - Respons :
-      ``
+      ```
       {
         "message":"successfully deleted data",
         "data":{
@@ -181,7 +181,7 @@
             "user": "ObjectID"
         }
       }
-      ``
+      ```
 
 5. **Delete All Tugas**, untuk menghapus semua data tugas
     - Methods : delete
@@ -189,7 +189,7 @@
     - HTTP Header:
      - authorization: token
     - Respons :
-      ``
+      ```
       {
         "message":"successfully deleted data",
         "data":{
@@ -200,7 +200,7 @@
             "user": "ObjectID"
         }
       }
-      ``
+      ```
 
 6. **Update Tugas By ID**, untuk update data tugas berdasarkan id
     - Methods : put
@@ -208,8 +208,8 @@
     - HTTP Header:
      - authorization: token
     - Respons :
-      ``
+      ```
       {
         "message": "Succes updated tugas"
       }
-      ``
+      ```
