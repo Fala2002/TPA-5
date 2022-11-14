@@ -12,12 +12,14 @@
 - Clone repository
  ``git clone https://github.com/Fala2002/TPA-5``
 - Menginstall semua dependencies, seperti express, mongoose, nodemon, jsonwebtoken, bcrypt, dotev dengan cara
- ``npm install express``
- ``npm install mongoose``
- ``npm install -D nodemon``
- ``npm install jsonwebtoken``
- ``npm install bcrypt``
- ``npm install dotev``
+ ```
+ npm install express
+ npm install mongoose
+ npm install -D nodemon
+ npm install jsonwebtoken
+ npm install bcrypt
+ npm install dotev
+ ```
 - Menjalankan project
  ``npm run dev``
 
@@ -27,15 +29,15 @@
     - Methods : get
     - Endpoint : /user
     - Body :
-      ``
+      ```
       {
         "name": "String",
         "email": "String",
         "password": "String"  
       } 
-      ``
+      ```
     - Respons :
-      ``
+      ```
       {
         Jika berhasil :
         "managed to get data"
@@ -43,7 +45,7 @@
         Jika gagal :
         console.log(error)
       }
-      ``
+      ```
 
 2. **Get User By Id**, Untuk mendapatkan data user berdasarkan id
     - Methods : get
